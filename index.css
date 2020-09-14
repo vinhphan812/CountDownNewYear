@@ -11,7 +11,6 @@ body{
 h1{
      color: #fff;
      text-shadow: 0px 0px 5px#333;
-     /* background-color: #ffffff50; */
      font-size: 70px;
      text-align: center;
      box-shadow: 0 0 5px 0 #333;
@@ -19,16 +18,21 @@ h1{
 .text{
      color: #fff;
      text-align: center;
+     text-shadow: 0 0 5px #333;
+}
+.medium-text{
+     font-size: 40px;
+     font-weight: 300;
 }
 .big-text{
-     font-size: 70px;
+     font-size: 5rem;
      font-weight: bold;
 }
 .container{
      display: flex;
      align-items: center;
      justify-content: space-evenly;
-     margin: auto;
+     flex-wrap: wrap;     
 }
 
 .container .item{
@@ -39,5 +43,22 @@ h1{
 }
 
 .container .item span{
-     font-size: 40px;
+     font-size: 2.5rem;
+}
+
+.link-text{
+     text-decoration: none;
+     transition: all linear 100ms;
+}
+
+.info{
+     text-align: center;
+}
+.link-text:hover{
+     font-weight: 400;
+     text-shadow: 0 0 10px #333;
+     background-color: #ffffff50;
+     padding: 5px;
+     border-radius: 10px;
+
 }

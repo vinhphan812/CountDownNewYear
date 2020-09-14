@@ -10,9 +10,9 @@ function countDownTimer(){
      const currentDate = new Date();
      const totalSeconds = (newYearsDate - currentDate) / 1000;
 
-     seconds.innerText = Math.floor(totalSeconds) % 60;
-     minute.innerText = Math.floor(totalSeconds / 60) % 60;
-     hours.innerText = Math.floor(totalSeconds / 3600) % 24;
+     seconds.innerText = Math.floor(totalSeconds) % 60 < 10 ? `0${Math.floor(totalSeconds) % 60}` : Math.floor(totalSeconds) % 60;
+     minute.innerText = Math.floor(totalSeconds / 60) % 60 < 10 ? `0${Math.floor(totalSeconds / 60) % 60}` : Math.floor(totalSeconds / 60) % 60;
+     hours.innerText = Math.floor(totalSeconds / 3600) % 24 < 10 ? `0${Math.floor(totalSeconds / 3600) % 24}` : Math.floor(totalSeconds / 3600) % 24;
      day.innerText = Math.floor(totalSeconds / 3600 / 24);
 }
 
