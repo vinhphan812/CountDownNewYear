@@ -1,4 +1,5 @@
-const newYears = "1 1 2021";
+const date = new Date();
+const newYears = "1 1 " + (date.getFullYear() + 1).toString();
 const newYearsDate = new Date(newYears);     
 var seconds = document.getElementById('seconds');
 var minute = document.getElementById('minute');
